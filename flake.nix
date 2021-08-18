@@ -10,5 +10,7 @@
         description = "A Rust project";
       };
     };
+
+    defaultTemplate = self.templates.trivial;
   };
 }
