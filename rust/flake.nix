@@ -8,7 +8,7 @@
     in
     {
       devShell = pkgs.mkShell {
-        nativeBuildInputs = with pkgs; [ rustc cargo ] ++ lib.optionals stdenv.isDarwin [ libiconv ];
+        nativeBuildInputs = with pkgs; [ rustc cargo clippy ] ++ lib.optionals stdenv.isDarwin [ libiconv ];
       };
     }
   );
